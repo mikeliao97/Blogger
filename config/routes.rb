@@ -3,12 +3,14 @@ Blogger::Application.routes.draw do
       resources :comments
     end
     resources :tags
-    root to: "articles#index"
+
+    root 'drinks#index'
+    #root to: "articles#index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'drinks#index'
+  
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
